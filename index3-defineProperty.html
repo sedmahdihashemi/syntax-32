@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            id : 1,
+            name : 'ali',
+            lname : 'gholi',
+            age : 26,
+        }
+        console.log(person.age);
+        person.age = 82
+        console.log(person.age);
+        person.phone = '09912525873'
+        console.log(person);
+
+
+        Object.defineProperty(person, 'valfajr4', {
+            get:function(){this.phone = '09654648' , this.age = 65}
+        })
+        person.valfajr4
+        console.log(person.phone);
+        console.log(person.age);
+    </script>
+</body>
+</html>

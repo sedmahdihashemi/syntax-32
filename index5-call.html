@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person1 = {
+            fullName : function(){
+                return this.name + ' - ' + this.lname
+            }
+        }
+
+        const person2 = {
+
+            name : 'gholi',
+            lname : 'gholiani',
+        }
+
+        console.log(person1.fullName.apply(person2));
+    </script>
+</body>
+</html>

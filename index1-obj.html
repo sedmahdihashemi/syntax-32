@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name : 'mahdi',
+            lname : 'hashemi' ,
+            age : 23,
+            info : {
+                eyeColor : 'gray',
+                car : 'lucky',
+
+            } ,
+        }
+        console.log(person);
+        console.log(person.lname);
+        console.log(person.info.eyeColor);
+
+        console.log(person['name']);
+
+        console.log(Object.keys(person));
+
+        for(let x in person){
+            console.log(person[x]);
+
+        }
+
+        delete person.name
+        
+    </script>
+</body>
+</html>

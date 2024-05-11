@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myGeneitor(name , lname, age){
+            this.name =  name
+            this.lname = lname
+            this.age = age
+        }
+        const person = new myGeneitor('ali' , 'mamadi' , 65)
+        console.log(person.lname);
+        Object.defineProperty(person , 'eyeColor' , {value : 'blue'})
+
+        console.log(person.eyeColor);
+    </script>
+</body>
+</html>
